@@ -86,7 +86,7 @@ const Logistration = (props) => {
       <span className="ml-2">
         {selectedPage === LOGIN_PAGE
           ? formatMessage(messages['logistration.sign.in'])
-          : formatMessage(messages['logistration.register'])}
+          : formatMessage('Should not be here')}
       </span>
     </div>
   );
@@ -125,7 +125,7 @@ const Logistration = (props) => {
                 )
                 : (!isValidTpaHint() && !hideRegistrationLink && (
                   <Tabs defaultActiveKey={selectedPage} id="controlled-tab" onSelect={(tabKey) => handleOnSelect(tabKey, selectedPage)}>
-                    <Tab title={formatMessage(messages['logistration.register'])} eventKey={REGISTER_PAGE} />
+{/*                     <Tab title={formatMessage(messages['logistration.register'])} eventKey={REGISTER_PAGE} /> */}
                     <Tab title={formatMessage(messages['logistration.sign.in'])} eventKey={LOGIN_PAGE} />
                   </Tabs>
                 ))}
