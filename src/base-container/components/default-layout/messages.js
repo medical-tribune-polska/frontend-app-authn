@@ -11,6 +11,10 @@ const messages = defineMessages({
     defaultMessage: 'with {siteName}',
     description: 'Header text with site name for logistration MFE pages',
   },
+  'with.polish.site.name': {
+    id: 'with.polish.site.name',
+    defaultMessage: 'z Akademią Lekarza Online',
+    description: "Header text with site name for logistration MFE pages. Polish conjugated custom name."}
 });
 
 export default messages;
