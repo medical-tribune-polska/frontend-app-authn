@@ -4,6 +4,7 @@ import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@openedx/paragon';
 import classNames from 'classnames';
+import * from '_medical_style.css';
 
 import messages from './messages';
 
@@ -21,9 +22,10 @@ const LargeLayout = () => {
           <div className={classNames({ 'large-yellow-line mr-n4.5': getConfig().SITE_NAME === 'edX' })} />
           <h1
             className={classNames(
-              'display-2 text-large-gray mw-xs',
+              'display-2 mw-xs',
               { 'ml-6': getConfig().SITE_NAME !== 'edX' },
             )}
+            style="color: #00958E;"
           >
             {formatMessage(messages['start.learning'])}
             <div className="text-accent-a">
