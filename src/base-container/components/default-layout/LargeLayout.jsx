@@ -17,7 +17,7 @@ const LargeLayout = () => {
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
         </Hyperlink>
-        <div className="min-vh-100 d-flex align-items-center justify-content-sm-center">
+        <div className="min-vh-100 d-flex align-items-center" style="width: 30%; border: 10px; border-color: blue">
           <div className={classNames({ 'large-yellow-line mr-n4.5': getConfig().SITE_NAME === 'edX' })} />
           <h1
 //             className={classNames(
