@@ -23,7 +23,7 @@ const LargeLayout = () => {
               'display-2 mw-xs',
               { 'ml-6': getConfig().SITE_NAME !== 'edX' },
             )}
-            style="color: #00958E;"
+//             style="color: #00958E;"
           >
             {formatMessage(messages['start.learning'])}
             <div className="text-accent-a">
