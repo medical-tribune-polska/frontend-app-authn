@@ -4,7 +4,7 @@ import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@openedx/paragon';
 import classNames from 'classnames';
-import * from '_medical_style.css';
+import * as styles from '_medical_style.css';
 
 import messages from './messages';
 
