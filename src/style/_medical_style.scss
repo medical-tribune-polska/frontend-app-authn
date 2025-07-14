@@ -1,9 +1,18 @@
 $special-gray: #00958E;
 $black: #000000;
 
-.text-large-gray {
+@font-face {
     font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+}
+
+
+.text-large-gray {
     font-size: 42px !important;
+    font-family: "Inter", sans-serif;
+//     font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: 'ExtraBold';
     //padding: 20px;
     //margin-left: 120px;
     color: $special-gray !important;
@@ -12,5 +21,8 @@ $black: #000000;
 .text-large-black {
     color: $black;
     font-size: 64px !important;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: 'ExtraBold';
 }
 
