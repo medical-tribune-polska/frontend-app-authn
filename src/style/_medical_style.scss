@@ -1,11 +1,9 @@
 $special-gray: #00958E;
 
-.text-large-gray { color: $special-gray !important; }
-
-#text-large-gray: {
+.text-large-gray {
     fontFamily: 'Roboto-Regular',
     fontSize: 16,
     padding: 20,
     marginLeft: 20,
-    color: #00958E
+    color: color: $special-gray !important;
  }
