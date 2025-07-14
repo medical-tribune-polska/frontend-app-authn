@@ -1,12 +1,16 @@
 $special-gray: #00958E;
+$black: #000000;
 
 .text-large-gray {
-    font-family: 'Arial';
-    font-size: 100px;
+    font-family: 'ComicSans';
+    font-size: 100px !important;
     padding: 20px;
     margin-left: 120px;
     color: $special-gray !important;
  }
 
-.text-large
+.text-large-black {
+    color: $black;
+    font-size: 64px !important;
+}
 

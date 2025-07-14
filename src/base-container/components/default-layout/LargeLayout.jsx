@@ -27,7 +27,7 @@ const LargeLayout = () => {
              className="text-large-gray"
           >
             {formatMessage(messages['start.learning'])}
-            <div className="text-accent-a">
+            <div className="text-large-black">
               {formatMessage(messages['with.polish.site.name'], { siteName: getConfig().SITE_NAME })}
             </div>
           </h1>
