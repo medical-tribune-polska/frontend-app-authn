@@ -11,14 +11,15 @@ $gradientColor: #CED8EB;
     background-color: blue !important;
 }
 
-.test-background2 {
+.right-main-container {
     background-color: red !important;
     width: 100%;
-    min-width: 564px !important;
+    min-width: 614px !important;
     height: 80%;
-    padding: 50px;
-    border-radius: 10;
-    box-shadow: 15px 15px 15px 15px rgb(0 0 0 / 10%);
+    padding: 75px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px 15px rgb(0 0 0 / 50%);
+    margin-right: 30px;
 }
 
 .half-screen-container {
