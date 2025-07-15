@@ -39,7 +39,7 @@ const FormGroup = (props) => {
         controlClassName={props.borderClass}
         trailingElement={props.trailingElement}
         floatingLabel={props.floatingLabel}
-        borderClass="field-border"
+        controlClassName="field-border"
       >
         {props.options ? props.options() : null}
       </Form.Control>
