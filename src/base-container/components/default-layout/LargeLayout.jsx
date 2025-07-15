@@ -11,13 +11,12 @@ const LargeLayout = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <div className="full-screen-container">
+    <div className="half-screen-container">
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-          <Image className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={"../../../style/assets/logo.png"} />
+          <Image className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={require("../../../style/assets/logo.png")} />
         </Hyperlink>
         <div className="justify-center">
             <div className="min-vh-100 d-flex align-items-center large-text-container">
-{/*               <div className={classNames({ 'large-yellow-line mr-n4.5': getConfig().SITE_NAME === 'edX' })} /> */}
               <h1 className="text-large-gray" >
                 {formatMessage(messages['start.learning'])}
                 <div className="text-large-black">
