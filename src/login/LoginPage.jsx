@@ -232,6 +232,7 @@ const LoginPage = (props) => {
             handleFocus={handleOnFocus}
             errorMessage={errors.emailOrUsername}
             floatingLabel={formatMessage(messages['login.user.identity.label'])}
+            className="login-field"
           />
           <PasswordField
             name="password"
@@ -243,6 +244,7 @@ const LoginPage = (props) => {
             handleFocus={handleOnFocus}
             errorMessage={errors.password}
             floatingLabel={formatMessage(messages['login.password.label'])}
+            className="login-field"
           />
           <StatefulButton
             name="sign-in"

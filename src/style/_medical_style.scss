@@ -2,6 +2,7 @@ $special-gray: #00958E;
 $black: #000000;
 $gradientColor: #CED8EB;
 $loginButtonBackground: #00908A;
+$fieldBorderColor: #D7D7D7;
 
 @font-face {
     font-family: 'Inter';
@@ -14,6 +15,12 @@ $loginButtonBackground: #00908A;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-style: 'Bold';
+}
+
+.login-field {
+    border-radius: 2;
+    border-color: $fieldBorderColor;
+    height: 50px;
 }
 
 .right-main-container {
