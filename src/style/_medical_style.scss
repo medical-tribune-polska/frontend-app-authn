@@ -18,8 +18,8 @@ $gradientColor: #CED8EB;
     padding: 75px;
     border-radius: 10px;
     box-shadow:
-        inset 15px 10px 10px 0 rgb(0 0 0 / 10%),  /* left and top */
-        inset -15px 10px 10px 0 rgb(0 0 0 / 10%)  /* right and top */
+        inset 15px 10px 10px 0 rgb(0 0 0, 0.1),
+        inset -15px 10px 10px 0 rgb(0 0 0, 0.1)
     ;
     margin-right: 30px;
 }
