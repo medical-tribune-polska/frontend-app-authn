@@ -6,6 +6,10 @@ $black: #000000;
     src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 }
 
+.large-text-container {
+    width: 495px !important;
+    justify-content: center;
+}
 
 .text-large-gray {
     font-size: 42px !important;
