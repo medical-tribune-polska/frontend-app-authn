@@ -27,23 +27,16 @@ $fieldTextColor: #888888;
     border-width: 0px;
 }
 
-.login-field {
-    color: $fieldTextColor !important;
-    font-size: 15px !important;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-
 .field-border {
-    display: flex !important;
+//     display: flex !important;
     border-radius: 4px !important;
     border-color: $fieldBorderColor !important;
     height: 50px !important;
     border-width: 1px !important;
-    color: $fieldTextColor !important;
-    font-size: 15px !important;
-    font-family: "Inter", sans-serif !important;
-    font-weight: 400 !important;
+//     color: $fieldTextColor !important;
+//     font-size: 15px !important;
+//     font-family: "Inter", sans-serif !important;
+//     font-weight: 400 !important;
 }
 
 .right-main-container {
