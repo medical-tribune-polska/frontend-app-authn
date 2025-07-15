@@ -1,7 +1,7 @@
 $special-gray: #00958E;
 $black: #000000;
-$gradientLeftColor: #CED8EB;
-$gradientRightColor: #E4EFEF;
+$gradientRightColor: #CED8EB;
+$gradientLeftColor: #E4EFEF;
 $loginButtonBackground: #00908A;
 $fieldBorderColor: #D7D7D7;
 $fieldTextColor: #888888;
@@ -30,7 +30,6 @@ $fieldTextColor: #888888;
 .login-field {
     border-radius: 4px !important;
     border-color: $fieldBorderColor !important;
-    height: 100px !important;
     color: $fieldTextColor !important;
     font-size: 15px !important;
     font-family: "Inter", sans-serif;
@@ -40,6 +39,7 @@ $fieldTextColor: #888888;
 .field-border {
     border-radius: 4px !important;
     border-color: $fieldBorderColor !important;
+    height: 100px;
 }
 
 .right-main-container {
