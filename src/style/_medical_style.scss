@@ -13,9 +13,12 @@ $gradientColor: #CED8EB;
 
 .test-background2 {
     background-color: red !important;
-    width: 50%;
-    height: 100%;
-    padding: 6%;
+    width: 100%;
+    min-width: 564px !important;
+    height: 80%;
+    padding: 50px;
+    border-radius: 10;
+    box-shadow: 15px 15px 15px 15px rgb(0 0 0 / 10%);
 }
 
 .half-screen-container {
