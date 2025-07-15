@@ -1,9 +1,11 @@
 $special-gray: #00958E;
 $black: #000000;
-$gradientColor: #CED8EB;
+$gradientLeftColor: #CED8EB;
+$gradientRightColor: #E4EFEF;
 $loginButtonBackground: #00908A;
 $fieldBorderColor: #D7D7D7;
 $fieldTextColor: #888888;
+
 
 @font-face {
     font-family: 'Inter';
@@ -61,12 +63,8 @@ $fieldTextColor: #888888;
     height: 100% !important;
 }
 
-.left-to-right-gradient {
-    background-image: linear-gradient(to right, $gradientColor, white);
-}
-
-.right-to-left-gradient {
-    background-image: linear-gradient(to right, white, $gradientColor);
+.background-gradient {
+    background-image: linear-gradient($gradientLeftColor 0%, white 50%, $gradientRightColor 100%);
 }
 
 .justify-center {
