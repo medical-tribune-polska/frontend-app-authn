@@ -7,10 +7,6 @@ $gradientColor: #CED8EB;
     src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 }
 
-.test-background {
-    background-color: blue !important;
-}
-
 .right-main-container {
     width: 100%;
     min-width: 614px !important;
@@ -18,8 +14,8 @@ $gradientColor: #CED8EB;
     padding: 75px;
     border-radius: 10px;
     box-shadow:
-        inset 15px 10px 10px 0 rgb(0 0 0 / 10%),
-        inset -15px 10px 10px 0 rgb(0 0 0 /10%)
+        inset -15px 10px 10px 0 rgb(0 0 0 / 10%),
+        inset 15px 10px 10px 0 rgb(0 0 0 /10%)
     ;
     margin-right: 30px;
 }

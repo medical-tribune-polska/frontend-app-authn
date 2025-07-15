@@ -107,7 +107,7 @@ const Logistration = (props) => {
                   <Tab title={tabTitle} eventKey={LOGIN_PAGE} />
                 </Tabs>
               )}
-              <div id="main-content" className="main-content test-background">
+              <div id="main-content" className="main-content">
                 {!institutionLogin && (
                   <h3 className="mb-4.5 text-medium-black">{formatMessage(messages['logistration.sign.in'])}</h3>
                 )}
