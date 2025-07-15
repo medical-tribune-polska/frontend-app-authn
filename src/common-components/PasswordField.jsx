@@ -146,7 +146,7 @@ const PasswordField = (props) => {
 };
 
 PasswordField.defaultProps = {
-  borderClass: '',
+  borderClass: 'field-border',
   errorMessage: '',
   handleBlur: null,
   handleFocus: null,
