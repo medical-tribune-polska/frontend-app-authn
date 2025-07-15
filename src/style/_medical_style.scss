@@ -17,13 +17,17 @@ $fieldTextColor: #888888;
     font-weight: 700;
     font-style: 'Bold';
     height: 50px !important;
+    border-radius: 2px;
 }
 
 .login-field {
-    border-radius: 1 !important;
+    border-radius: 2px !important;
     border-color: $fieldBorderColor !important;
     height: 50px !important;
     color: $fieldTextColor !important;
+    font-size: 15px !important;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
 }
 
 .right-main-container {
