@@ -44,6 +44,7 @@ $fieldTextColor: #888888;
     border-radius: 8px;
     box-shadow: 0 0 15px rgb(0 0 0 / 10%);
     margin-right: 30px;
+    background-color: white;
 }
 
 .login-container {
@@ -65,7 +66,7 @@ $fieldTextColor: #888888;
 }
 
 .right-to-left-gradient {
-    background-image: linear-gradient(to left, $gradientColor , white);
+    background-image: linear-gradient(to left, white , $gradientColor);
 }
 
 .justify-center {
