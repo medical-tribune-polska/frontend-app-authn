@@ -19,12 +19,17 @@ $gradientColor: #CED8EB;
 
 .login-container {
     width: 464px !important;
-    background-color: red;
 }
 
 .half-screen-container {
     width: 50%;
     height: 100%;
+}
+
+.full-screen-container {
+    width:100% !important;
+    height: 100% !important
+    background-color: blue;
 }
 
 .left-to-right-gradient {
