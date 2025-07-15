@@ -17,7 +17,7 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
 
   if (enableImageLayout) {
     return (
-      <div className="layout">
+      <div className="layout right-to-left-gradient">
         <MediaQuery maxWidth={breakpoints.extraSmall.maxWidth - 1}>
           {showWelcomeBanner ? <AuthSmallLayout fullName={fullName} /> : <ImageExtraSmallLayout />}
         </MediaQuery>
@@ -38,7 +38,7 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
   }
 
   return (
-    <>
+{/*     <> */}
 {/*       <div className="col-md-12 extra-large-screen-top-stripe" /> */}
       <div className="layout right-to-left-gradient">
         <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
@@ -54,7 +54,7 @@ const BaseContainer = ({ children, showWelcomeBanner, fullName }) => {
           {children}
         </div>
       </div>
-    </>
+//     </>
   );
 };
 
