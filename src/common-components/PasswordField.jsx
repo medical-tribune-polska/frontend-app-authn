@@ -121,7 +121,7 @@ const PasswordField = (props) => {
       <OverlayTrigger key="tooltip" placement={placement} overlay={tooltip} show={showTooltip}>
         <Form.Control
           as="input"
-          className="form-group__form-field"
+          className="form-group__form-field login-field"
           type={isPasswordHidden ? 'password' : 'text'}
           name={props.name}
           value={props.value}
