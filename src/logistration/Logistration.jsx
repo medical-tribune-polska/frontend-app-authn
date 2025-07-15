@@ -98,7 +98,7 @@ const Logistration = (props) => {
 
   return (
     <BaseContainer>
-      <div>
+      <div className="test-background2">
 {/*         {disablePublicAccountCreation */}
 {/*           ? ( */}
 {/*             <> */}
