@@ -12,13 +12,15 @@ $gradientColor: #CED8EB;
 }
 
 .right-main-container {
-    background-color: red !important;
     width: 100%;
     min-width: 614px !important;
     height: 80%;
     padding: 75px;
     border-radius: 10px;
-    box-shadow: 15px 15px 15px 15px rgb(0 0 0 / 50%);
+    box-shadow:
+        inset 15px 10px 10px 0 rgb(0 0 0 / 10%),  /* left and top */
+        inset -15px 10px 10px 0 rgb(0 0 0 / 10%)  /* right and top */
+    ;
     margin-right: 30px;
 }
 
