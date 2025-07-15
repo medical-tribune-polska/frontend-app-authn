@@ -28,8 +28,6 @@ $fieldTextColor: #888888;
 }
 
 .login-field {
-    border-radius: 4px !important;
-    border-color: $fieldBorderColor !important;
     color: $fieldTextColor !important;
     font-size: 15px !important;
     font-family: "Inter", sans-serif;
@@ -39,7 +37,7 @@ $fieldTextColor: #888888;
 .field-border {
     border-radius: 4px !important;
     border-color: $fieldBorderColor !important;
-    height: 100px !important;
+    height: 50px !important;
     border-width: 1px !important;
     color: $fieldTextColor !important;
     font-size: 15px !important;

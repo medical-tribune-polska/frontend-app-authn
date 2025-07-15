@@ -27,7 +27,7 @@ const FormGroup = (props) => {
         readOnly={props.readOnly}
         type={props.type}
         aria-invalid={props.errorMessage !== ''}
-        className="form-group__form-field login-field"
+        className="form-group__form-field"
         autoComplete={props.autoComplete}
         spellCheck={props.spellCheck}
         name={props.name}
@@ -39,6 +39,7 @@ const FormGroup = (props) => {
         controlClassName={props.borderClass}
         trailingElement={props.trailingElement}
         floatingLabel={props.floatingLabel}
+        borderClass="field-border"
       >
         {props.options ? props.options() : null}
       </Form.Control>
@@ -67,7 +68,7 @@ FormGroup.defaultProps = {
   autoComplete: null,
   borderClass: '',
   children: null,
-  className: 'login-field',
+  className: '',
   errorMessage: '',
   handleBlur: null,
   handleChange: () => {},
