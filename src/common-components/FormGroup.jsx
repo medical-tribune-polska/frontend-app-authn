@@ -67,7 +67,7 @@ FormGroup.defaultProps = {
   autoComplete: null,
   borderClass: '',
   children: null,
-  className: '',
+  className: 'login-field',
   errorMessage: '',
   handleBlur: null,
   handleChange: () => {},
