@@ -16,13 +16,14 @@ $fieldTextColor: #888888;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-style: 'Bold';
+    height: 50px !important;
 }
 
 .login-field {
-    border-radius: 1;
-    border-color: $fieldBorderColor;
-    height: 50px;
-    color: $fieldTextColor;
+    border-radius: 1 !important;
+    border-color: $fieldBorderColor !important;
+    height: 50px !important;
+    color: $fieldTextColor !important;
 }
 
 .right-main-container {
