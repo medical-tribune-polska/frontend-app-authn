@@ -62,11 +62,11 @@ $fieldTextColor: #888888;
 }
 
 .left-to-right-gradient {
-    background-image: linear-gradient(to right, $gradientColor , white);
+    background-image: linear-gradient(to right, $gradientColor, white);
 }
 
 .right-to-left-gradient {
-    background-image: linear-gradient(to left, white , $gradientColor);
+    background-image: linear-gradient(to right, white, $gradientColor);
 }
 
 .justify-center {
