@@ -11,9 +11,9 @@ const LargeLayout = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <div>
+    <div className="full-screen-container">
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-          <Image className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src="../../../style/assets/logo.png" />
+          <Image className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={"../../../style/assets/logo.png"} />
         </Hyperlink>
         <div className="justify-center">
             <div className="min-vh-100 d-flex align-items-center large-text-container">

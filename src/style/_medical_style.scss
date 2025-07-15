@@ -6,6 +6,11 @@ $black: #000000;
     src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 }
 
+.full-screen-container {
+    width: 100%;
+    height: 100%;
+}
+
 .justify-center {
     display: flex;
     justify-content: center;
