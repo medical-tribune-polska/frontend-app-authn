@@ -16,7 +16,7 @@ const LargeLayout = () => {
           <Image className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={require("../../../style/assets/logo.png")} />
         </Hyperlink>
         <div className="justify-center">
-            <div className="min-vh-100 d-flex align-items-center large-text-container">
+            <div className="min-vh-100 d-flex large-text-container text-container-top-margin">
               <h1 className="text-large-gray" >
                 {formatMessage(messages['start.learning'])}
                 <div className="text-large-black">

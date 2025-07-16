@@ -16,8 +16,12 @@ $fieldTextColor: #888888;
     padding-bottom: 40px;
 }
 
+.max-login-space-height {
+    max-height: 600px;
+}
+
 .text-container-top-margin {
-    margin-top: 120px;
+    margin-top: 300px;
 }
 
 .test-background {
@@ -51,6 +55,7 @@ $fieldTextColor: #888888;
     box-shadow: 0 0 15px rgb(0 0 0 / 10%);
     margin-right: 30px;
     background-color: white;
+    max-height: 600px;
 }
 
 .login-container {
