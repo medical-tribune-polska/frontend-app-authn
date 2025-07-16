@@ -13,10 +13,10 @@ const MediumLayout = () => {
   return (
     <div className="w-100 p-0 mb-3 d-flex background-gradient">
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-        <Image alt={getConfig().SITE_NAME} className="logo" src={require("../../../style/assets/logo.png")} />
+        <Image alt={getConfig().SITE_NAME} className="position-absolute logo-margin" src={require("../../../style/assets/logo.png")} />
       </Hyperlink>
-      <div className="d-flex align-items-center justify-content-center mb-4 min-top-part-height">
-        <div>
+      <div className="d-flex align-items-center justify-center mb-4 min-top-part-height test-background">
+        <div className="min-vh-100 d-flex align-items-center large-text-container">
           <h1 className="text-large-gray" >
             <span>
               {formatMessage(messages['start.learning'])}{' '}
