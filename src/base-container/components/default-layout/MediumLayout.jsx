@@ -24,14 +24,14 @@ const MediumLayout = () => {
 {/*                 {formatMessage(messages['with.polish.site.name'], { siteName: getConfig().SITE_NAME })} */}
 {/*               </span> */}
 {/*             </span> */}
-            
+
               <h1 className="text-large-gray" >
                 {formatMessage(messages['start.learning'])}
                 <div className="text-large-black">
                   {formatMessage(messages['with.polish.site.name'], { siteName: getConfig().SITE_NAME })}
                 </div>
               </h1>
-          </h1>
+{/*           </h1> */}
         </div>
       </div>
     </div>
