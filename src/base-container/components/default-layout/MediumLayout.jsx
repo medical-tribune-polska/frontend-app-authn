@@ -15,7 +15,7 @@ const MediumLayout = () => {
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image alt={getConfig().SITE_NAME} className="position-absolute logo-margin" src={require("../../../style/assets/logo.png")} />
       </Hyperlink>
-      <div className="d-flex align-items-center justify-center mb-4 min-top-part-height test-background">
+      <div className="d-flex align-items-center justify-center mb-4">
         <div className="min-vh-100 d-flex align-items-center large-text-container">
           <h1 className="text-large-gray" >
             <span>
