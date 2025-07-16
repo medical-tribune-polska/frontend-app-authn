@@ -16,7 +16,7 @@ const MediumLayout = () => {
         <Image alt={getConfig().SITE_NAME} className="position-absolute logo-margin" src={require("../../../style/assets/logo.png")} />
       </Hyperlink>
       <div className="d-flex align-items-center justify-center mb-4 text-container-top-margin">
-        <div className="d-flex align-items-center large-text-container min-top-height">
+        <div className="d-flex align-items-center large-text-container">
           <h1 className="text-large-gray" >
             {formatMessage(messages['start.learning'])}
             <div className="text-large-black">
