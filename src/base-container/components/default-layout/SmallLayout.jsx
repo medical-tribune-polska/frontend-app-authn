@@ -17,21 +17,16 @@ const SmallLayout = () => {
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image className="logo-small" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
         </Hyperlink>
-        <div className="d-flex align-items-center m-3.5">
-          <div className={classNames({ 'small-yellow-line mr-n2.5': getConfig().SITE_NAME === 'edX' })} />
-          <h1
-            className={classNames(
-              'text-white mt-3.5 mb-3.5',
-            )}
-          >
-            <span>
-              {formatMessage(messages['start.learning'])}{' '}
-              <span className="text-accent-a d-inline-block">
-                {formatMessage(messages['with.polish.site.name'], { siteName: getConfig().SITE_NAME })}
-              </span>
-            </span>
+         <div className="d-flex align-items-center justify-center mb-4 text-container-top-margin">
+        <div className="d-flex align-items-center large-text-container">
+          <h1 className="text-large-gray" >
+            {formatMessage(messages['start.learning'])}
+            <div className="text-large-black">
+              {formatMessage(messages['with.polish.site.name'], { siteName: getConfig().SITE_NAME })}
+            </div>
           </h1>
         </div>
+      </div>
       </div>
     </span>
   );
