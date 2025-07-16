@@ -11,7 +11,7 @@ const SmallLayout = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <span className="bg-primary-400 w-100">
+    <span className="w-100">
       <div>
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image className="logo-small" alt={getConfig().SITE_NAME} src={require("../../../style/assets/logo.png") />
