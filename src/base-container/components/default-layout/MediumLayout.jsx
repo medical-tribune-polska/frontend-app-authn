@@ -11,7 +11,7 @@ const MediumLayout = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <div className="w-100 p-0 mb-3 d-flex background-gradient">
+    <div className="background-gradient">
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image alt={getConfig().SITE_NAME} className="position-absolute logo-margin" src={require("../../../style/assets/logo.png")} />
       </Hyperlink>
