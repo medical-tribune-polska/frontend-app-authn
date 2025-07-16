@@ -12,6 +12,10 @@ $fieldTextColor: #888888;
     src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 }
 
+.bottom-padding {
+    padding-bottom: 40px;
+}
+
 .test-background {
     background-color: red !important;
 }
@@ -59,7 +63,7 @@ $fieldTextColor: #888888;
 }
 
 .min-top-height {
-    height: 400px;
+    height: 320px;
 }
 
 .full-screen-container {
