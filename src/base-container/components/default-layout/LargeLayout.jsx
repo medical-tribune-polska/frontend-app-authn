@@ -14,7 +14,7 @@ const LargeLayout = () => {
   return (
     <div className="half-screen-container">
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-          <img className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={logo} />
+          <img className="position-absolute logo" alt={getConfig().SITE_NAME} src={logo} />
         </Hyperlink>
         <div className="justify-center">
             <div className="min-vh-100 d-flex large-text-container">

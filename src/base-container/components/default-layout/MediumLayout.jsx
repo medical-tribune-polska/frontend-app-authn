@@ -13,7 +13,7 @@ const MediumLayout = () => {
   return (
     <div className="full-width-container">
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-        <Image alt={getConfig().SITE_NAME} className="position-absolute logo-margin" src={logo} />
+        <Image alt={getConfig().SITE_NAME} className="position-absolute logo-medium" src={logo} />
       </Hyperlink>
       <div className="d-flex align-items-center justify-center mb-4 text-container-top-margin">
         <div className="d-flex align-items-center large-text-container">
