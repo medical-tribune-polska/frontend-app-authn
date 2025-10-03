@@ -6,7 +6,7 @@ import { Hyperlink, Image } from '@openedx/paragon';
 import classNames from 'classnames';
 import messages from './messages';
 import * as styles from '../../../style/_medical_style.scss'
-import logo from 'style/assets/logo.png';
+import logo from '../../../style/assets/logo.png';
 
 const LargeLayout = () => {
   const { formatMessage } = useIntl();

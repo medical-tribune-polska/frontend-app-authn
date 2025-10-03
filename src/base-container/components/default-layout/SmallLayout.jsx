@@ -4,7 +4,7 @@ import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Hyperlink, Image } from '@openedx/paragon';
 import classNames from 'classnames';
-import logo from 'style/assets/logo.png';
+import logo from '../../../style/assets/logo.png';
 import messages from './messages';
 
 const SmallLayout = () => {
