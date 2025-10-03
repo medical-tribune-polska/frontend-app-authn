@@ -34,10 +34,12 @@ $fieldTextColor: #888888;
     border-radius: 4px;
     border-width: 0px;
     &:hover {
-        background-color: $special-gray;
+        background-color: $special-gray !important;
+        color: $special-gray !important;
     }
     &:active {
-        background-color: $special-gray;
+        background-color: $special-gray !important;
+        color: $special-gray !important;
     }
 }
 
