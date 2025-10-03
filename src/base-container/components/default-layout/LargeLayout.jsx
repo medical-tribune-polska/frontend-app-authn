@@ -6,6 +6,7 @@ import { Hyperlink, Image } from '@openedx/paragon';
 import classNames from 'classnames';
 import messages from './messages';
 import * as styles from '../../../style/_medical_style.scss'
+import logo from 'style/assets/logo.png';
 
 const LargeLayout = () => {
   const { formatMessage } = useIntl();
@@ -13,7 +14,7 @@ const LargeLayout = () => {
   return (
     <div className="half-screen-container">
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-          <Image className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={require("../../../style/assets/logo.png")} />
+          <img className="position-absolute logo-margin" alt={getConfig().SITE_NAME} src={logo} />
         </Hyperlink>
         <div className="justify-center">
             <div className="min-vh-100 d-flex large-text-container">
