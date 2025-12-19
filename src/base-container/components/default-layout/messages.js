@@ -13,7 +13,7 @@ const messages = defineMessages({
   },
   'with.polish.site.name': {
     id: 'with.polish.site.name',
-    defaultMessage: 'z Akademią Lekarza Online',
+    defaultMessage: 'z Edumedo Online',
     description: "Header text with site name for logistration MFE pages. Polish conjugated custom name."}
 });
 
