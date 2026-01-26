@@ -43,9 +43,9 @@ const LoginFailureMessage = (props) => {
   }
 
   let resetLink = (
-    <Hyperlink destination="https://podyplomie.pl/haslo/zapomniane" target="_blank" isInline>
+    <span>
       {formatMessage(messages['login.incorrect.credentials.error.reset.link.text'])}
-    </Hyperlink>
+    </span>
   );
 
   let errorMessage;
@@ -109,9 +109,9 @@ const LoginFailureMessage = (props) => {
       break;
     case FAILED_LOGIN_ATTEMPT: {
       resetLink = (
-        <Hyperlink destination="https://podyplomie.pl/haslo/zapomniane" target="_blank" isInline>
+        <span>
           {formatMessage(messages['login.incorrect.credentials.error.before.account.blocked.text'])}
-        </Hyperlink>
+        </span>
       );
       errorMessage = (
         <>
