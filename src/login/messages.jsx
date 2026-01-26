@@ -158,12 +158,12 @@ const messages = defineMessages({
   },
   'login.incorrect.credentials.error.reset.link.text': {
     id: 'login.incorrect.credentials.error.reset.link.text',
-    defaultMessage: 'reset your password',
+    defaultMessage: 'zresetuj hasło z poziomu serwisu Podyplomie.pl',
     description: 'Reset password link text for incorrect email or password credentials',
   },
   'login.incorrect.credentials.error.before.account.blocked.text': {
     id: 'login.incorrect.credentials.error.before.account.blocked.text',
-    defaultMessage: 'click here to reset it.',
+    defaultMessage: 'zresetuj hasło z poziomu serwisu Podyplomie.pl',
     description: 'Reset password link text for incorrect email or password credentials before blocking account',
   },
   // Vulnerable password change prompt
