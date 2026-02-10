@@ -13,6 +13,10 @@ import configuration from './config';
 import messages from './i18n';
 import MainApp from './MainApp';
 
+// MEDICAL TRIBUNE: Force Polish language by setting cookie before initialization
+// This ensures the language is set even before the first login
+document.cookie = 'openedx-language-preference=pl; path=/; max-age=31536000; SameSite=Lax';
+
 subscribe(APP_READY, () => {
   const root = createRoot(document.getElementById('root'));
 
