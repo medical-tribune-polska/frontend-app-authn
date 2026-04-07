@@ -244,6 +244,16 @@ const LoginPage = (props) => {
             errorMessage={errors.password}
             floatingLabel={formatMessage(messages['login.password.label'])}
           />
+          <p className="text-medium-black mb-3">
+            {'Nie masz jeszcze konta? '}
+            <a
+              href="https://sklep.podyplomie.pl/users/sign_up"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zarejestruj się w podyplomie.pl
+            </a>
+          </p>
           <StatefulButton
             name="sign-in"
             id="sign-in"
