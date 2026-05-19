@@ -12,7 +12,7 @@ const SmallLayout = () => {
 
   return (
     <span className="w-100">
-      <div>
+      <div className="text-center">
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image className="logo-small" alt={getConfig().SITE_NAME} src={logo} />
         </Hyperlink>

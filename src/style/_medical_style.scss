@@ -51,10 +51,8 @@ $fieldTextColor: #888888;
 }
 
 .right-main-container {
-    width: 100%;
-    min-width: 614px !important;
     height: 80%;
-    padding: 75px;
+    padding-top: 75px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgb(0 0 0 / 10%);
     margin-right: 30px;
@@ -92,7 +90,7 @@ $fieldTextColor: #888888;
 .justify-center {
     display: flex;
     justify-content: center;
-    width: 100% !important;
+    width: 100%;
 }
 
 .text-medium-black {
@@ -123,8 +121,55 @@ $fieldTextColor: #888888;
     font-style: 'ExtraBold';
 }
 
-// .logo-margin {
-//     margin-top: 50px !important;
-//     margin-left: 55px !important;
-// }
+@media only screen and (max-width: 500px) {
+    .logo-small {
+        display: inline-block;
+        margin: 2rem 0 0 0 !important;
+    }
+
+    .text-container-top-margin {
+        margin-top: 30px !important;
+    }
+
+    .large-text-container {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .text-large-gray {
+        font-size: 28px !important;
+    }
+
+    .text-large-black {
+        font-size: 36px !important;
+    }
+
+    .right-main-container {
+        min-width: unset !important;
+        box-shadow: 0 0 15px rgb(0 0 0 / 8%);
+        padding-top: 10px;
+        margin-right: 16px !important;
+        margin-left: 16px;
+        min-height: unset;
+        padding-bottom: 20px;
+    }
+
+    .main-content {
+        min-width: unset !important;
+        padding-top: 1rem !important;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .welcome-page-content {
+        min-width: unset !important;
+    }
+
+    .justify-center {
+        display: flex;
+        justify-content: center;
+        width: unset !important;
+    }
+}
 
