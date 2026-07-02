@@ -16,7 +16,7 @@ const LargeLayout = ({ fullName }) => {
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={logo} />
         </Hyperlink>
-        <div className="min-vh-100 d-flex align-items-center">
+        <div className="d-flex align-items-center">
           <div className="large-screen-left-container mr-n4.5 large-yellow-line mt-5" />
           <div>
             <h1 className="welcome-to-platform data-hj-suppress">

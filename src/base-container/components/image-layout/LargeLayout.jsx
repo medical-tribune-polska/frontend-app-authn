@@ -18,7 +18,7 @@ const LargeLayout = () => {
       <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         <Image className="company-logo position-absolute" alt={getConfig().SITE_NAME} src={logo} />
       </Hyperlink>
-      <div className="min-vh-100 p-5 d-flex align-items-end">
+      <div className="p-5 d-flex align-items-end">
         <h1 className="display-2 mw-sm mb-3 d-flex flex-column flex-shrink-0 justify-content-center">
           <span className="text-light-500">
             {formatMessage(messages['your.career.turning.point'])}

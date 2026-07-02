@@ -26,6 +26,7 @@ import { ProgressiveProfiling } from './progressive-profiling';
 import { RecommendationsPage } from './recommendations';
 import { RegistrationPage } from './register';
 import { ResetPasswordPage } from './reset-password';
+import SiteFooter from './components/SiteFooter';
 
 import './index.scss';
 
@@ -37,26 +38,31 @@ const MainApp = () => (
       <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
     </Helmet>
     {getConfig().ZENDESK_KEY && <Zendesk />}
-    <Routes>
-      <Route path="/" element={<Navigate replace to={updatePathWithQueryParams(REGISTER_PAGE)} />} />
-      <Route
-        path={REGISTER_EMBEDDED_PAGE}
-        element={<EmbeddedRegistrationRoute><RegistrationPage /></EmbeddedRegistrationRoute>}
-      />
-      <Route
-        path={LOGIN_PAGE}
-        element={
-          <UnAuthOnlyRoute><Logistration selectedPage={LOGIN_PAGE} /></UnAuthOnlyRoute>
-        }
-      />
-      <Route path={REGISTER_PAGE} element={<UnAuthOnlyRoute><Logistration /></UnAuthOnlyRoute>} />
-      <Route path={RESET_PAGE} element={<Navigate replace to={PAGE_NOT_FOUND} />} />
-      <Route path={PASSWORD_RESET_CONFIRM} element={<Navigate replace to={PAGE_NOT_FOUND} />} />
-      <Route path={AUTHN_PROGRESSIVE_PROFILING} element={<ProgressiveProfiling />} />
-      <Route path={RECOMMENDATIONS} element={<RecommendationsPage />} />
-      <Route path={PAGE_NOT_FOUND} element={<NotFoundPage />} />
-      <Route path="*" element={<Navigate replace to={PAGE_NOT_FOUND} />} />
-    </Routes>
+    <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
+      <div className="flex-grow-1 background-gradient">
+        <Routes>
+          <Route path="/" element={<Navigate replace to={updatePathWithQueryParams(REGISTER_PAGE)} />} />
+          <Route
+            path={REGISTER_EMBEDDED_PAGE}
+            element={<EmbeddedRegistrationRoute><RegistrationPage /></EmbeddedRegistrationRoute>}
+          />
+          <Route
+            path={LOGIN_PAGE}
+            element={
+              <UnAuthOnlyRoute><Logistration selectedPage={LOGIN_PAGE} /></UnAuthOnlyRoute>
+            }
+          />
+          <Route path={REGISTER_PAGE} element={<UnAuthOnlyRoute><Logistration /></UnAuthOnlyRoute>} />
+          <Route path={RESET_PAGE} element={<Navigate replace to={PAGE_NOT_FOUND} />} />
+          <Route path={PASSWORD_RESET_CONFIRM} element={<Navigate replace to={PAGE_NOT_FOUND} />} />
+          <Route path={AUTHN_PROGRESSIVE_PROFILING} element={<ProgressiveProfiling />} />
+          <Route path={RECOMMENDATIONS} element={<RecommendationsPage />} />
+          <Route path={PAGE_NOT_FOUND} element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate replace to={PAGE_NOT_FOUND} />} />
+        </Routes>
+      </div>
+      <SiteFooter />
+    </div>
   </AppProvider>
 );
 

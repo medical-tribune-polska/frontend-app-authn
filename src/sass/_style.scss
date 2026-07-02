@@ -455,3 +455,143 @@ select.form-control {
 .pgn__form-control-decorator-trailing {
   right: 0 !important;
 }
+
+// Footer
+$bottom-footer-border-color: #C5C6C7;
+$copyright-font-color: #777777;
+
+.footer-wrapper {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.footer-spacer {
+    border-top: 1px solid $bottom-footer-border-color;
+    width: 100%;
+    height: 2px;
+}
+
+.thin-spacer-line {
+    height: 1px;
+    background-color: $bottom-footer-border-color;
+    width: 100%;
+}
+
+.horizontal-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.footer-inner-wrapper {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.copyright-footer {
+    color: $copyright-font-color;
+    margin-top: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .partner-info {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        color: $copyright-font-color;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+}
+
+.footer-center-buttons {
+    display: flex;
+    padding: 12px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-link {
+    display: flex;
+    color: $copyright-font-color;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    min-width: 85px;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+    width: 139px;
+    height: 30px;
+    left: 0;
+
+    @media(min-width: 600px) {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-wrapper {
+        height: auto;
+    }
+
+    .horizontal-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-center-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-link {
+        padding: 4px 0;
+    }
+
+    .copyright-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        > span:first-child {
+            width: 250px;
+        }
+
+        .partner-info {
+            order: -1;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 12px;
+
+            a {
+                margin-top: 8px;
+
+                img {
+                    height: 24px !important;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+}

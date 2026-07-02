@@ -14,6 +14,8 @@ $fieldTextColor: #888888;
 
 .bottom-padding {
     padding-bottom: 40px;
+    min-height: 0 !important;
+    height: auto !important;
 }
 
 .text-container-top-margin {
