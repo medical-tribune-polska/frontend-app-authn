@@ -1,6 +1,28 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
+import * as Sentry from '@sentry/react';
+
+const sentryEnvironment = window.location.hostname.includes('staging') ? 'staging' : 'production';
+
+Sentry.init({
+  dsn: 'https://83885e6774ebfb1463caff288dfa35d3@o414147.ingest.us.sentry.io/4511670694248448',
+  environment: sentryEnvironment,
+  integrations: [
+    Sentry.browserTracingIntegration(),
+    Sentry.replayIntegration({ maskAllText: true }),
+  ],
+  tracesSampleRate: 0.5,
+  replaysSessionSampleRate: 0.1,
+  replaysOnErrorSampleRate: 1.0,
+  ignoreErrors: [
+    'NS_ERROR_FAILURE',
+    /ResizeObserver loop/,
+    'ChunkLoadError',
+  ],
+  denyUrls: [/googletagmanager\.com/, /google-analytics\.com/],
+});
+
 import React, { StrictMode } from 'react';
 
 import {
